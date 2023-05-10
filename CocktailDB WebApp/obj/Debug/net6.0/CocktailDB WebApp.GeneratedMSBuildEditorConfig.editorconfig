@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CocktailDB_WebApp
+build_property.RootNamespace = CocktailDB_WebApp
+build_property.ProjectDir = C:\Users\jamey.geoghagan\source\repos\CocktailDB WebApp\CocktailDB WebApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jamey.geoghagan\source\repos\CocktailDB WebApp\CocktailDB WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/Error/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/ListByIngredient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdEJ5SW5ncmVkaWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/ListByIngredient/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdEJ5SW5ncmVkaWVudFxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/NonAlcoholicDrink/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9uQWxjb2hvbGljRHJpbmtcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/RandomDrink/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZG9tRHJpbmtcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/SearchByLetter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoQnlMZXR0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/SearchByName/DrinkByID.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoQnlOYW1lXERyaW5rQnlJRC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/SearchByName/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoQnlOYW1lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jamey.geoghagan/source/repos/CocktailDB WebApp/CocktailDB WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0kai7x34yw

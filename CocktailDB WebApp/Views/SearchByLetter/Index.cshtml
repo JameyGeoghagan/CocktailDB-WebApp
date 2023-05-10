@@ -1,0 +1,75 @@
+﻿@model CocktailDB_WebApp.Models.SearchByLetterModel.Root
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "1"})">1</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "2"})">2</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "3"})">3</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "4"})">4</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "5"})">5</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "6"})">6</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "7"})">7</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "8"})">8</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "9"})">9</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "a"})">A</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "b"})">B</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "c"})">C</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "d"})">D</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "e"})">E</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "f"})">F</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "g"})">G</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "h"})">H</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "i"})">I</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "j"})">J</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "k"})">K</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "l"})">L</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "m"})">M</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "n"})">N</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "o"})">O</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "p"})">P</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "q"})">Q</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "r"})">R</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "s"})">S</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "t"})">T</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "u"})">U</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "v"})">V</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "w"})">W</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "x"})">X</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "y"})">Y</a></li>
+    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "SearchByLetter", new{letter = "z"})">Z</a></li>
+</ul>
+
+<div class='centerAlign'>
+    <table class="table centerAlign">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class='centerAlign'>
+            @foreach (var item in Model.drinks)
+            {
+                <tr class='centerAlign'>
+                    <td class='centerAlign'>
+                        <div class="col-md-5 centerAlign">
+                            <div class="card" style="width: 18rem;">
+                                <img src="@item.strDrinkThumb" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.strDrink</h5>
+                                    <p class="card-text">@item.strInstructions</p>
+                                    <button onclick="location.href='@Url.Action("DrinkByID", "SearchByName", new{ id = @item.idDrink})'">
+                                        Learn How to Make it!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

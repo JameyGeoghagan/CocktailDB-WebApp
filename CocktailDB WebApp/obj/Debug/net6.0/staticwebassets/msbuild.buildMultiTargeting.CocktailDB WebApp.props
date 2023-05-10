@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CocktailDB WebApp.props" />
+</Project>

@@ -1,0 +1,93 @@
+﻿@model CocktailDB_WebApp.Models.DrinkModel.Drink
+
+@{
+    ViewData["Title"] = Model.strDrink;
+}
+
+<h1 class='centerAlign'>@Model.strDrink</h1>
+<div class='centerAlign'>
+    <img src="@Model.strDrinkThumb" />
+</div>
+<div class='centerAlign'>
+    <h4>Instructions</h4>
+    <hr />
+    <dl class="row">
+        <div>
+            <p>@Model.strInstructions</p>
+        </div>
+    </dl>
+</div>
+<div class='centerAlign'>
+    <h4>What you will need</h4>
+    <hr />
+    <dl class="row">
+        <div>
+            <h5>The type of glass you will need is a @Model.strGlass</h5>
+            <h5>Ingredients</h5>
+            <ul class="list-unstyled">
+                @if (Model.strIngredient1 != null && Model.strMeasure1 != null)
+                {
+                    <li>You will need to measure @Model.strMeasure1 of @Model.strIngredient1</li>
+                }
+                @if (Model.strIngredient2 != null && Model.strMeasure2 != null)
+                {
+                    <li>Then you will need to measure @Model.strMeasure2 of @Model.strIngredient2</li>
+                }
+                @if (Model.strIngredient3 != null && Model.strMeasure3 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure3 of @Model.strIngredient3</li>
+                }
+                @if (Model.strIngredient4 != null && Model.strMeasure4 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure4 of @Model.strIngredient4</li>
+                }
+                @if (Model.strIngredient5 != null && Model.strMeasure5 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure5 of @Model.strIngredient5</li>
+                }
+                @if (Model.strIngredient6 != null && Model.strMeasure6 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure6 of @Model.strIngredient6</li>
+                }
+                @if (Model.strIngredient7 != null && Model.strMeasure7 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure7 of @Model.strIngredient7</li>
+                }
+                @if (Model.strIngredient8 != null && Model.strMeasure8 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure8 of @Model.strIngredient8</li>
+                }
+                @if (Model.strIngredient9 != null && Model.strMeasure9 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure9 of @Model.strIngredient9</li>
+                }
+                @if (Model.strIngredient10 != null && Model.strMeasure10 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure10 of @Model.strIngredient10</li>
+                }
+                @if (Model.strIngredient11 != null && Model.strMeasure11 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure11 of @Model.strIngredient11</li>
+                }
+                @if (Model.strIngredient12 != null && Model.strMeasure12 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure12 of @Model.strIngredient12</li>
+                }
+                @if (Model.strIngredient13 != null && Model.strMeasure13 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure13 of @Model.strIngredient13</li>
+                }
+                @if (Model.strIngredient14 != null && Model.strMeasure14 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure14 of @Model.strIngredient14</li>
+                }
+                @if (Model.strIngredient15 != null && Model.strMeasure15 != null)
+                {
+                    <li>Then you need to measure @Model.strMeasure15 of @Model.strIngredient15</li>
+                }
+            </ul>
+            <h2>Enjoy and remember to drink responsibly</h2>
+        </div>
+    </dl>
+</div>
+

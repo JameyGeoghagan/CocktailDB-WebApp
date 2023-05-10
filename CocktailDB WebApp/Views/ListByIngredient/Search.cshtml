@@ -1,0 +1,38 @@
+﻿@model CocktailDB_WebApp.Models.ListByIngredientModel.Root
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class='centerAlign'>Results for @ViewBag.results</h1>
+<div class='centerAlign'>
+    <table class="table centerAlign">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class='centerAlign'>
+            @foreach (var item in Model.drinks)
+            {
+                <tr class='centerAlign'>
+                    <td class='centerAlign'>
+                        <div class="col-md-5 centerAlign">
+                            <div class="card" style="width: 18rem;">
+                                <img src="@item.strDrinkThumb" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.strDrink</h5>
+                                    <p class="card-text">@item.strInstructions</p>
+                                    <button onclick="location.href='@Url.Action("DrinkByID", "SearchByName", new{ id = @item.idDrink})'">
+                                        Learn How to Make it!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

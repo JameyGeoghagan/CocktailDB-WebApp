@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class='centerAlign'>
+    <div style="background-image: url(Image/header.jpg)" class="jumbotron bg-cover text-white align-content-lg-around">
+        <div class="container py-5 text-center">
+            <h1 class="display-4 font-weight-bold">Welcome to the cocktail database</h1>
+            <p class="font-italic mb-0">This is just a fun project that will help you find a drink to try!</p>
+            <p class="font-italic">
+                App made by Jamey Geoghagan check out my git hub
+            </p>
+            <a href="https://github.com/JameyGeoghagan" role="button" class="btn-light btn-primary px-5">GitHub</a>
+        </div>
+    </div>
+    <div class="container">
+        <br />
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form asp-controller="SearchByName" asp-action="Index" class="card card-sm">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col-auto">
+                            <i class="fas fa-search h4 text-body"></i>
+                        </div>
+                        <!--end of col-->
+                        <div class="col">
+                            <input class="form-control form-control-lg form-control-borderless" name="searchText" type="search" placeholder="Search for a drink!">
+                        </div>
+                        <!--end of col-->
+                        <div class="col-auto">
+                            <button class="btn-light btn-lg btn-success" type="submit" value="searchText">Search</button>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                </form>
+            </div>
+            <!--end of col-->
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-4">
+        <div class="row centerAlign">
+            @*    <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+            <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Popular Drinks</h5>
+            <p class="card-text">This will bring you some of the most popular drinks and how to make them!</p>
+            <a href="#" class="btn "><i class="fab fa-github"></i> Check it out</a>
+            </div>
+            </div>
+            </div>*@
+            <div class="col-md-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="/image/listByLetterCard.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">List of all our Drinks!</h5>
+                        <p class="card-text">Here you will be able to search through the drinks</p>
+                        <a href="@Url.Action("Index", "SearchByLetter", new{letter = "a"})" class="btn-light"><i class="fab fa-github"></i> Check it out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="/image/nonAlcoholicCard.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Check out the non alcoholic drinks</h5>
+                        <p class="card-text">Drinks for the wonderfull DD, or just fun drinks to make that do not have alcohol in them</p>
+                        <a href="@Url.Action("Index", "NonAlcoholicDrink")" class="btn-light"><i class="fab fa-github"></i> Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 align-content-lg-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/image/randomDrinkCard.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Try the random drink generator</h5>
+                        <p class="card-text">If you just dont know what to check out, try the radom drink. It pulls a drink for you to try!</p>
+                        <a href="@Url.Action("Index", "RandomDrink")" class="btn-light"><i class="fab fa-github"></i> Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card" style="width: 18rem; ">
+                    <img src="/image/drinkIngredient.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Search by ingredient</h5>
+                        <p class="card-text">Have a ingresient in mind well search the drinks based on the ingredient you provid</p>
+                        <a href="@Url.Action("Index", "ListByIngredient")" class="btn-light "><i class="fab fa-github"></i> Check it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

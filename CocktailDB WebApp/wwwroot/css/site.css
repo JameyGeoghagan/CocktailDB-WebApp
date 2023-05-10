@@ -1,0 +1,140 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+    background: #808080;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.logo {
+    padding: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2b2626;
+}
+
+    nav ul li {
+        list-style: none;
+    }
+
+
+        nav ul li a {
+            display: block;
+            font-family: 'montserrat';
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 17px;
+            color: #fff;
+            position: relative;
+            padding: 15px 0px 15px 25px;
+            transition: all 0.5s;
+        }
+
+            nav ul li a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                background: #e3e9f7;
+                border-radius: 40px 0 0 40px;
+                z-index: -1;
+                transition: all 1s;
+            }
+
+            nav ul li a:hover {
+                color: #2b2626;
+            }
+
+                nav ul li a:hover:before {
+                    width: 95%;
+                }
+
+
+.wrapper {
+    margin-left: 260px;
+}
+
+.section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.box-area h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.bg-cover {
+    background-size: cover !important;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.card {
+    background: #222;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source: var(--gradient) !important;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+    .btn:hover, .btn:focus {
+        background: var(--gradient) !important;
+        -webkit-background-clip: none !important;
+        -webkit-text-fill-color: #fff !important;
+        border: 5px solid #fff !important;
+        box-shadow: #222 1px 0 10px;
+        text-decoration: underline;
+    }
+
+    .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
